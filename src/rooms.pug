@@ -13,7 +13,7 @@ html(lang="zh-TW")
         each item, index in self.htmlWebpackPlugin.options.rooms
           section.intro
             .description
-              a(href=`/${item.name}.html` target="_blank" rel="noopener noreferer")
+              a(href=`./${item.name}.html` target="_blank" rel="noopener noreferer")
                 h3.room-title(data-sub=item.subtitle)=item.title
                 p!=item.description
             .image.bg-image(style="background-image:url(./assets/imgs/rooms/"+item.image+")")
