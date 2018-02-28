@@ -20,11 +20,11 @@ html(lang="zh-TW")
             a(href="/rooms.html") < 返回
           .room-image__container
             each image in self.htmlWebpackPlugin.options.room.images
-              img(data-hash=`${image}` src=`/assets/imgs/${self.htmlWebpackPlugin.options.roomName}/${image}.jpg`)
+              img(data-hash=`${image}` src=`,/assets/imgs/${self.htmlWebpackPlugin.options.roomName}/${image}.jpg`)
           .room-image__navigator
             each image in self.htmlWebpackPlugin.options.room.images
               a.nav-item(href=`#${image}`)
-                div(style=`background-image: url(/assets/imgs/${self.htmlWebpackPlugin.options.roomName}/${image}.jpg)`)
+                div(style=`background-image: url(./assets/imgs/${self.htmlWebpackPlugin.options.roomName}/${image}.jpg)`)
           if self.htmlWebpackPlugin.options.room.title != '包棟'
             table.price-table
               thead
