@@ -18,6 +18,10 @@
     margin-left: 1em;
     border-left: 1px solid #aaa;
 
+    ul {
+      padding-left: 20px;
+    }
+
     @include for-mobile {
       padding-left: 0;
       margin-left: 0;
