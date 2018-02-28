@@ -1,0 +1,30 @@
+[
+  {
+    "name": "nara",
+    "title": "奈良 日式四人房",
+    "subtitle": "Quad Room",
+    "description": "棕鹿配色的日式清新居家小宅，彷若香醇濃郁的卡布奇諾，微苦中釋放嫣然嫵媚的牛奶香氣，回甘無窮，沈澱在無印格調簡約率真的精神和感動",
+    "image": "room1.jpg"
+  },
+  {
+    "name": "blue",
+    "title": "香波藍 豪華雙人房",
+    "subtitle": "Queen Room",
+    "description": "藏身在傳說裡的人間樂土香格里拉，仰望共同的天空藍，匆匆浮生中，意外因緣，重拾皇家歐風的尊榮曲調，不禁心曠神怡，連步履也輕快起來",
+    "image": "room2.jpg"
+  },
+  {
+    "title": "千本宮 木質雙人房",
+    "name": "senpon",
+    "subtitle": "Standard  Room",
+    "description": "長橋臥波，未雲何龍，<br/>復道行空，不霽何虹，<br/>春光融融，秋雨淒淒，<br>一宮之間，氣候不齊。<br>千彙萬狀終歸根於初本心宮，<br>雲水之間尋見古色木香飄盪。",
+    "image": "room3.jpg"
+  },
+  {
+    "title": "原宿白 簡約雙人房",
+    "name": "hara",
+    "subtitle": "Standard  Room",
+    "description": "白，白的虛無縹緲，不切實際，白日夢是世人的專利和口技，悠遊敞徉在夢幻國度，睜眼冥想鏡花水月的原生空無，萬物皆為你所用",
+    "image": "room4.jpg"
+  }
+]

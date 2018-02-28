@@ -1,0 +1,32 @@
+footer
+  .footer-item
+    img(src="/assets/imgs/logo-autumn.png" class="footer-logo")
+    h3 〖季節村落〗秋晨屋，是您的最佳旅伴
+    hr
+    p.intro=self.htmlWebpackPlugin.options.wording.footer
+    a(href="/contact.html" class="btn autumn") 聯絡村長訂房
+  .footer-item
+    h2 CONTACT
+    ul
+      li
+        i.fa.fa-lg.fa-phone
+        tel=self.htmlWebpackPlugin.options.wording.phone
+      li
+        i.fa.fa-lg.fa-map-marker
+        span=self.htmlWebpackPlugin.options.wording.address
+      li
+        i.fa.fa-lg.fa-envelope
+        a(href="mailto:"+self.htmlWebpackPlugin.options.wording.email)=self.htmlWebpackPlugin.options.wording.email
+    .social-links
+      each item, name in self.htmlWebpackPlugin.options.wording.social
+        a(href=item target="_blank" rel="noopener noreferer")
+          i(class="fab fa-lg fa-"+name+" "+name)
+
+    span ID(Line、WeChat)：seasonvillage
+  .footer-item
+    .fb-page(data-href="https://www.facebook.com/seasonvillage60" data-tabs="timeline" data-small-header="true" data-width="480" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
+      blockquote(cite="https://www.facebook.com/seasonvillage60" class="fb-xfbml-parse-ignore")
+        a(href="https://www.facebook.com/seasonvillage60") 台南民宿 秋晨屋
+
+
+

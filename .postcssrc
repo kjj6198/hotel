@@ -1,0 +1,7 @@
+plugins:
+  autoprefixer:
+    browsers:
+      - last 4 versions
+      - last 3 Safari versions
+      - Android 4.3
+  cssnano: true

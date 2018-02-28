@@ -1,0 +1,39 @@
+.landing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 75px);
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+
+  .intro {
+    width: 350px;
+    margin: 0 auto;
+    transform: scale(.85);
+    position: relative;
+    left: 5%;
+    bottom: 4%;
+    h2 {
+      font-size: map-get($font, large);
+      letter-spacing: 2px;
+    }
+
+    p { color: #fff; }
+  }
+
+  .subintro {
+    position: absolute;
+    width: 250px;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+    @include for-mobile {
+      display: none;
+    }
+  }
+}

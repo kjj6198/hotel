@@ -1,0 +1,102 @@
+.note {
+  .note-title {
+    margin: 2em 0;
+    font-size: map-get($font, large);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    .nav-item {
+      padding: 6px 16px;
+      border: 1px solid #efb709;
+      background-color: #fcf3cb;
+
+      @include for-mobile {
+        &:not(:last-child) { margin-right: .25em; }
+      }
+    }
+  }
+
+  .title {
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: .25em;
+    border-bottom: 1px solid #ddd
+  }
+
+  ol > li,
+  ul > li {
+    color: lighten(#000, 15%);
+    margin-bottom: 1em;
+  }
+
+  strong {
+    color: #fe6565;
+    font-weight: bold;
+  }
+}
+
+
+.contact {
+  .title {
+    margin: 2em 0;
+    img {
+      height: 1.5em;
+      vertical-align: middle;
+    }
+
+    &::after {
+      display: block;
+      font-weight: normal;
+      font-size: map-get($font, normal);
+      content: attr(data-sub);
+    }
+  }
+
+  iframe { width: 100%; }
+  .item-title {
+    padding: 1.5em .5em;
+    margin: 0;
+    writing-mode: vertical-rl;
+    background-color: $autumn;
+    &.winter {
+
+    }
+  }
+
+}
+
+
+.traffic-item,
+.south,
+.north {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+
+  .item-title {
+    margin-right: 1em;
+  }
+
+  p { flex: 1; }
+}
+
+
+.traffic > h3 {
+  display: block;
+  width: 200px;
+
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  background: darken($autumn, 40%);
+
+  &::before,
+  &::after {
+    content: " - ";
+  }
+}

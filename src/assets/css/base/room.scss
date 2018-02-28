@@ -1,0 +1,95 @@
+.room-detail {
+  display: flex;
+  justify-content: space-around;
+
+  @include for-mobile {
+    display: block;
+  }
+
+  .room-description {
+    width: 960px;
+    flex-basis: 70%;
+    flex: 4;
+  }
+
+  .room-equipment {
+    flex: 1;
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: 1px solid #aaa;
+
+    @include for-mobile {
+      padding-left: 0;
+      margin-left: 0;
+      border: 0;
+    }
+  }
+}
+
+.room-image__container {
+  display: flex;
+  width: 100%;
+}
+
+.room-image__navigator {
+  $image-width: 150px;
+  margin-bottom: 1em;
+  .nav-item {
+    display: inline-block;
+    width: $image-width;
+    &:not(:last-child) {
+      margin-right: .25em;
+    }
+
+    &:target {
+      border: 1px solid #aaa;
+    }
+
+    div {
+      padding-bottom: $image-width;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #aaa;
+
+  thead {
+    color: #fff;
+    tr {
+      text-align: center;
+    }
+
+    th {
+      border: 1px solid #fff;
+      padding: .5em;
+      background-color: #999;
+    }
+  }
+
+  tbody {
+    tr > td {
+      padding: .5em;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+    tr:nth-child(odd) > td {
+      background-color: lighten(#999, 35%);
+    }
+
+    tr:nth-child(even) > td {
+      background-color: lighten(#999, 30%);
+    }
+  }
+}
+
+.defination > h4 {
+  font-weight: normal;
+  margin-top: 2em;
+}

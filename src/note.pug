@@ -1,0 +1,46 @@
+doctype html
+html(lang="zh-TW")
+  head
+    title 訂房須知 | 台南民宿 季節村落
+    include partials/head
+body
+  include partials/header
+  .bg-image.note-image(style="background-image: url(./assets/imgs/note-autumn.png);")
+  .container.note
+    h2.note-title(data-sub="NOTES")
+      img.title-image(src="./assets/imgs/title-autumn.png")
+      span 訂房須知
+    .nav
+      span.nav-item
+        a(href="#reservation") 訂房方式
+      span.nav-item
+        a(href="#announcement") 住宿須知
+      span.nav-item
+        a(href="#account") 匯款資訊
+      span.nav-item
+        a(href="#cancellation") 延期/取消/退費
+    .note
+      h2#reservation.title 訂房方式
+      ol
+        each item in self.htmlWebpackPlugin.options.data.reservation
+          li!=item
+      h2.title#announcement 住宿須知
+      ol
+        each item in self.htmlWebpackPlugin.options.data.announcement
+          li!=item
+      h2.title#account 匯款資訊
+      ul
+        each item in self.htmlWebpackPlugin.options.data.account
+          li=item
+      h2.title#cancellation 延期/取消/退費
+      h4 ■ 延期住宿：
+      p!=self.htmlWebpackPlugin.options.data.cancellation.delay
+      h4 ■ 天災延期：
+      p!=self.htmlWebpackPlugin.options.data.cancellation.damage
+      h4 ■ 取消訂房
+      p!=self.htmlWebpackPlugin.options.data.cancellation.cancel
+      ul
+        each item in self.htmlWebpackPlugin.options.data.cancellation.terms
+          li=item
+
+  include partials/footer
