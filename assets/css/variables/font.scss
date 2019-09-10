@@ -1,0 +1,18 @@
+$base-font-size: 18px;
+$lineheight-base: 1.65;
+$heading-margin-bottom: 1rem / 2;
+
+$font-family: (
+  serif: (Georgia, Cambria, "Times New Roman", Times, serif, "SongTi TC"),
+  sans: ("-apple-system", BlinkMacSystemFont, "PingFang TC", "Roboto", sans-serif),
+  number: ('Oswald', sans-serif)
+);
+
+$font: (
+  'x-large': 3rem,
+  large: 2rem,
+  medium: 1.3rem,
+  normal: 1rem,
+  small: .8rem,
+  'x-small': .5rem,
+);

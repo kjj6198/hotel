@@ -1,0 +1,51 @@
+.rooms-intro {
+
+  & > section.intro {
+    display: flex;
+    margin-bottom: 5em;
+    min-height: 550px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @include for-mobile {
+      display: block;
+    }
+  }
+
+  .image {
+    flex: 2;
+
+    @include for-mobile {
+      padding-bottom: 250px;
+    }
+  }
+  .description {
+    flex: 1;
+    margin: 0 .5em;
+    .room-title {
+      font-size: map-get($font, medium);
+      text-align: left;
+      &::after {
+        font-weight: normal;
+        content: " / " attr(data-sub);
+        font-size: map-get($font, small);
+        color: #999;
+      }
+    }
+    p {
+      @include for-mobile {
+        width: 100%;
+        height: auto;
+        writing-mode: initial;
+      }
+      writing-mode: vertical-rl;
+      width: 75%;
+      height: 70%;
+      line-height: 2;
+      letter-spacing: 3px;
+      color: #857868;
+    }
+  }
+}

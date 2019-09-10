@@ -1,0 +1,21 @@
+meta(http-equiv="Content-Type" content="charset=UTF-8")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+meta(property="og:title" content="台南民宿 -【季節村落】")
+meta(property="og:description" content=self.htmlWebpackPlugin.options.data.description)
+meta(property="description" content=self.htmlWebpackPlugin.options.data.description)
+meta(property="og:image" content="assets/imgs/fbbanner.png")
+link(href="./assets/css/vendor/fontawesome-all.css" type="text/css" rel="stylesheet")
+script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+script(src="tracking.js")
+
+div#fb-root
+
+script.
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12&appId=547367158768838&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));

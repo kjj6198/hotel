@@ -1,0 +1,20 @@
+doctype html
+html(lang="zh-TW")
+  head
+    title 房型介紹 | 【季節村落】
+    include partials/head
+  body
+    include partials/header
+    .container
+      h2.hotel-title(data-sub="GUESTROOM INFO.")
+        img(src="./assets/imgs/title-autumn.png")
+        span 房型介紹
+      .rooms-intro
+        each item, index in self.htmlWebpackPlugin.options.rooms
+          section.intro
+            .description
+              a(href=`./${item.name}.html` target="_blank" rel="noopener noreferer")
+                h3.room-title(data-sub=item.subtitle)=item.title
+                p!=item.description
+            .image.bg-image(style="background-image:url(./assets/imgs/rooms/"+item.image+")")
+    include partials/footer

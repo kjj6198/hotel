@@ -1,0 +1,18 @@
+{
+  "autumn": [
+    "./assets/imgs/landing/autumn/1.jpg",
+    "./assets/imgs/landing/autumn/2.jpg",
+    "./assets/imgs/landing/autumn/3.jpg",
+    "./assets/imgs/landing/autumn/4.jpg",
+    "./assets/imgs/landing/autumn/5.jpg",
+    "./assets/imgs/landing/autumn/6.jpg"
+  ],
+  "winter": [
+    "./assets/imgs/landing/winter/1.jpg",
+    "./assets/imgs/landing/winter/2.jpg",
+    "./assets/imgs/landing/winter/3.jpg",
+    "./assets/imgs/landing/winter/4.jpg",
+    "./assets/imgs/landing/winter/5.jpg",
+    "./assets/imgs/landing/winter/6.jpg"
+  ]
+}
